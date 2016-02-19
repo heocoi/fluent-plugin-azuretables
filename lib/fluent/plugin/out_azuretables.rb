@@ -14,7 +14,7 @@ module Fluent
 
     # config_param defines a parameter
     config_param :account_name, :string                                 # your azure storage account
-    config_param :access_key, :string                                   # your azure storage access key
+    config_param :access_key, :string, :secret => true                  # your azure storage access key
     config_param :table, :string                                        # azure storage table name
     config_param :create_table_if_not_exists, :bool, :default => false
     config_param :key_delimiter, :string, :default => '__'
